@@ -243,6 +243,9 @@ h1, h2, h3, h4 {
 
 .dynamic-img {
     width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 16px;
     display: block;
 }
@@ -577,5 +580,6 @@ footer p {
 
 @media (max-width: 480px) {
     .hero h1 { font-size: 1.8rem; }
+    .dynamic-img { height: 380px; }
     .gallerySwiper .swiper-slide { width: 260px; height: 350px; }
 }
