@@ -7,6 +7,7 @@
     <meta name="description" content="Acelera seus resultados com o melhor acompanhamento VIP online.">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -79,8 +80,25 @@
     <section class="steps-section">
         <div class="container steps-container">
             <div class="steps-image">
-                <img src="WhatsApp%20Image%202026-03-07%20at%2011.39.10.jpeg" alt="Personal acompanhando treino" class="dynamic-img glassmorphism">
-                <img src="WhatsApp%20Image%202026-03-07%20at%2011.39.13.jpeg" alt="Treino focado" class="dynamic-img img-overlap glassmorphism">
+                <!-- Swiper -->
+                <div class="swiper stepsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="WhatsApp%20Image%202026-03-07%20at%2011.39.10.jpeg" alt="Personal acompanhando treino" class="dynamic-img glassmorphism">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="WhatsApp%20Image%202026-03-07%20at%2011.39.13.jpeg" alt="Treino focado" class="dynamic-img glassmorphism">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="WhatsApp Image 2026-03-07 at 11.39.06(1).jpeg" alt="Antes e Depois" class="dynamic-img glassmorphism">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="WhatsApp%20Image%202026-03-07%20at%2011.39.14.jpeg" alt="Acompanhamento" class="dynamic-img glassmorphism">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
             <div class="steps-content">
                 <h2 class="section-title left-aligned">Não é só um aplicativo. <span class="highlight">É um Personal no seu celular.</span></h2>
@@ -112,12 +130,32 @@
     <!-- RESULTADOS (GALERIA) -->
     <section class="gallery-section">
         <div class="container">
-            <h2 class="section-title">O que nos inspira</h2>
-            <div class="gallery-grid">
-                <img src="WhatsApp Image 2026-03-07 at 11.39.06(1).jpeg" alt="Imagem 1" loading="lazy">
-                <img src="WhatsApp Image 2026-03-07 at 11.39.08(1).jpeg" alt="Imagem 2" loading="lazy">
-                <img src="WhatsApp%20Image%202026-03-07%20at%2011.39.07.jpeg" alt="Imagem 3" loading="lazy">
-                <img src="WhatsApp%20Image%202026-03-07%20at%2011.39.08.jpeg" alt="Imagem 4" loading="lazy">
+            <h2 class="section-title">Resultados que <span class="highlight">Inspiram</span></h2>
+            
+            <div class="swiper gallerySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="WhatsApp Image 2026-03-07 at 11.39.08(1).jpeg" alt="Imagem" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="WhatsApp%20Image%202026-03-07%20at%2011.39.07.jpeg" alt="Imagem" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="WhatsApp%20Image%202026-03-07%20at%2011.39.08.jpeg" alt="Imagem" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="WhatsApp%20Image%202026-03-07%20at%2011.39.06.jpeg" alt="Imagem" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="WhatsApp%20Image%202026-03-07%20at%2011.39.05.jpeg" alt="Imagem" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="WhatsApp%20Image%202026-03-07%20at%2011.39.11(1).jpeg" alt="Imagem" loading="lazy">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -126,22 +164,38 @@
     <section class="testimonials-section">
         <div class="container">
             <h2 class="section-title">O que meus alunos dizem</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card glassmorphism">
-                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p>"Nunca achei que conseguiria resultados tão rápidos treinando em casa. O acompanhamento no WhatsApp faz toda a diferença!"</p>
-                    <h4>- Mariana S.</h4>
+            <div class="swiper testimonialsSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card glassmorphism">
+                            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p>"Nunca achei que conseguiria resultados tão rápidos treinando em casa. O acompanhamento no WhatsApp faz toda a diferença!"</p>
+                            <h4>- Mariana S.</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card glassmorphism">
+                            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p>"Excelente profissional! Os treinos são dinâmicos e a mudança mensal não me deixa desanimar ou cair na rotina."</p>
+                            <h4>- Rafael T.</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card glassmorphism">
+                            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p>"A avaliação por fotos do método Shaped foi libertadora. Descobri o que realmente funciona para o meu biotipo!"</p>
+                            <h4>- Camila L.</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card glassmorphism">
+                            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p>"Mais do que estética, ganhei saúde mental e muita disposição para acordar cedo e viver meu dia."</p>
+                            <h4>- João V.</h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-card glassmorphism">
-                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p>"Excelente profissional! Os treinos são dinâmicos e a mudança mensal não me deixa desanimar ou cair na rotina."</p>
-                    <h4>- Rafael T.</h4>
-                </div>
-                <div class="testimonial-card glassmorphism">
-                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p>"A avaliação por fotos do método Shaped foi libertadora. Descobri o que realmente funciona para o meu biotipo!"</p>
-                    <h4>- Camila L.</h4>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -222,5 +276,72 @@
         </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // Steps Swiper (Simple Carousel)
+        var stepsSwiper = new Swiper(".stepsSwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            effect: "fade",
+        });
+
+        // Gallery Swiper
+        var gallerySwiper = new Swiper(".gallerySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        // Testimonials Swiper
+        var testimonialsSwiper = new Swiper(".testimonialsSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
 </body>
 </html>
