@@ -304,20 +304,36 @@ h1, h2, h3, h4 {
     padding: 5rem 0;
 }
 
-.container-body-care {
-    display: flex;
+.body-care-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "title image"
+        "text image"
+        "list image";
+    gap: 0 4rem;
     align-items: center;
-    gap: 4rem;
 }
 
-.body-care-content {
-    flex: 1;
+.body-care-content .section-title {
+    grid-area: title;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .body-care-content p {
+    grid-area: text;
     color: var(--text-secondary);
     font-size: 1.1rem;
     margin-bottom: 2rem;
+}
+
+.body-care-content .body-care-list {
+    grid-area: list;
+}
+
+.body-care-content .body-care-image {
+    grid-area: image;
 }
 
 .body-care-list {
@@ -662,7 +678,20 @@ footer p {
     .steps-container, .container-body-care, .about-inner { flex-direction: column; }
     .about-photo { width: 100%; height: 320px; }
     .steps-image { width: 100%; margin-bottom: 2rem; }
-    .body-care-image { width: 100%; margin-top: 2rem; }
+    
+    .body-care-content {
+        display: flex;
+        flex-direction: column;
+        /*text-align: center;*/
+    }
+    .body-care-content .section-title {
+        /*text-align: center;*/
+    }
+    .body-care-content .body-care-image {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    
     .pricing-card.popular { transform: none; }
 }
 
