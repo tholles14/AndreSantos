@@ -304,36 +304,29 @@ h1, h2, h3, h4 {
     padding: 5rem 0;
 }
 
-.body-care-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "title image"
-        "text image"
-        "list image";
-    gap: 0 4rem;
+.container-body-care {
+    display: flex;
     align-items: center;
+    gap: 4rem;
+}
+
+.body-care-content {
+    flex: 1;
 }
 
 .body-care-content .section-title {
-    grid-area: title;
     text-align: left;
     margin-bottom: 2rem;
 }
 
 .body-care-content p {
-    grid-area: text;
     color: var(--text-secondary);
     font-size: 1.1rem;
     margin-bottom: 2rem;
 }
 
-.body-care-content .body-care-list {
-    grid-area: list;
-}
-
-.body-care-content .body-care-image {
-    grid-area: image;
+.body-care-image {
+    flex: 1;
 }
 
 .body-care-list {
@@ -359,10 +352,6 @@ h1, h2, h3, h4 {
     color: var(--text-primary);
     display: block;
     margin-bottom: 4px;
-}
-
-.body-care-image {
-    flex: 1;
 }
 
 /* TESTIMONIALS SECTION */
@@ -679,18 +668,24 @@ footer p {
     .about-photo { width: 100%; height: 320px; }
     .steps-image { width: 100%; margin-bottom: 2rem; }
     
+    /* MOBILE REORDERING FOR BODY CARE */
     .body-care-content {
+        display: contents;
+    }
+    .container-body-care {
         display: flex;
         flex-direction: column;
-        /*text-align: center;*/
+        gap: 0;
+        align-items: flex-start;
     }
-    .body-care-content .section-title {
-        /*text-align: center;*/
+    .body-care-content .section-title { order: 1; text-align: left; }
+    .body-care-content p { order: 2; margin-bottom: 2rem; text-align: left; }
+    .body-care-image { 
+        order: 3; 
+        width: 100%; 
+        margin: 0 0 2rem 0; 
     }
-    .body-care-content .body-care-image {
-        width: 100%;
-        margin: 2rem 0;
-    }
+    .body-care-list { order: 4; }
     
     .pricing-card.popular { transform: none; }
 }
